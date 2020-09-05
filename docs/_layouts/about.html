@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h2>{{ site.course-title }}</h2>
+  <a href="{{ site.course-page }}"><i class="fab fa-safari"></i> Course Page</a>
+
+  <p>{{ site.description }}</p>
+</div>
